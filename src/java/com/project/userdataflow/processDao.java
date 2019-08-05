@@ -16,7 +16,7 @@ public class processDao extends HttpServlet {
        UserDetailsDAO udao = new UserDetailsDAOImpl();
        List<UserDetails> ud = udao.listAllUsers();
        session.setAttribute("user", ud);
-       response.sendRedirect("pgControlPanel.jsp");
+       //response.sendRedirect("pgControlPanel.jsp");
     }
      
      
